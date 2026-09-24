@@ -27,7 +27,7 @@ This laboratory experiment demonstrates the configuration, deployment, and secur
   <img width="1006" height="832" alt="FTP_SERVER -PART-1" src="https://github.com/user-attachments/assets/575ff911-8c6a-48f9-b543-00f40876c233" />
   <img width="971" height="812" alt="FTP_PART-2" src="https://github.com/user-attachments/assets/f9604d25-8fc8-46d2-a75e-dd6f82d337fe" />
 
-2. **ervice Verification::**
+2. **Service Verification::**
     Verified that the `⁠vsftpd⁠` service is active and running:
      `sudo systemctl status vsftpd`
    
