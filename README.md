@@ -23,23 +23,27 @@ This laboratory experiment demonstrates the configuration, deployment, and secur
    Configured DNS resolution (`8.8.8.8`) to establish internet access and installed the `vsftpd` package:
    ```bash
   `sudo apt update && sudo apt install vsftpd -y `
+  
   <img width="1006" height="832" alt="FTP_SERVER -PART-1" src="https://github.com/user-attachments/assets/575ff911-8c6a-48f9-b543-00f40876c233" />
   <img width="971" height="812" alt="FTP_PART-2" src="https://github.com/user-attachments/assets/f9604d25-8fc8-46d2-a75e-dd6f82d337fe" />
 
 2. **ervice Verification::**
     Verified that the `⁠vsftpd⁠` service is active and running:
      `sudo systemctl status vsftpd`
+   
     <img width="981" height="272" alt="FTP-3" src="https://github.com/user-attachments/assets/91818f4e-b12e-41ee-be44-5d8fd593a2c3" />
 
-3. **Service Configuration (⁠/etc/vsftpd.conf⁠):**
+4. **Service Configuration (⁠/etc/vsftpd.conf⁠):**
     Enabled write access for local users by updating the configuration file:
     `write_enable=YES`
+   
    <img width="1001" height="827" alt="FTP" src="https://github.com/user-attachments/assets/3b2054e2-6129-4db9-96cf-c338bb6841f1" />
    
-4.  **User Creation & Service Restart:**
+6.  **User Creation & Service Restart:**
      Created local user ⁠ftpuser⁠ with home directory privileges and restarted the service:
     `sudo adduser ftpuser
      sudo systemctl restart vsftpd`
+    
     <img width="587" height="325" alt="kryet vtp_f" src="https://github.com/user-attachments/assets/c781e047-a379-4e7c-881a-b240445613d8" />
 
  ### 2. Client Routing & Network Configuration 
@@ -48,9 +52,10 @@ This laboratory experiment demonstrates the configuration, deployment, and secur
 1.  **Assigned static IP and default gateway on `⁠PC-HQ-CEO-01⁠` via Linux CLI:**
   ⁠` sudo ip addr add 192.168.10.10/24 dev ens3
     sudo ip route add default via 192.168.10.1⁠`
+    
    <img width="1017" height="817" alt="image" src="https://github.com/user-attachments/assets/f5357b93-2ec2-4604-8d94-67c6157b7bab" />
 
-2. **Verified ICMP reachability (Ping) between VLAN 10 and VLAN 50.**
+3. **Verified ICMP reachability (Ping) between VLAN 10 and VLAN 50.**
    <img width="960" height="740" alt="image" src="https://github.com/user-attachments/assets/d30e4b7b-696b-4df2-a44d-7aaf687b0813" />
 
 
