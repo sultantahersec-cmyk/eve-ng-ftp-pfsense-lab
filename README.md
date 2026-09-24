@@ -35,14 +35,14 @@ This laboratory experiment demonstrates the configuration, deployment, and secur
    
 <img width="981" height="272" alt="FTP-3" src="https://github.com/user-attachments/assets/91818f4e-b12e-41ee-be44-5d8fd593a2c3" />
 
-4. **Service Configuration (⁠/etc/vsftpd.conf⁠):**
+3. **Service Configuration (⁠/etc/vsftpd.conf⁠):**
     Enabled write access for local users by updating the configuration file:
       ```bash
     write_enable=YES
    
   <img width="1001" height="827" alt="FTP" src="https://github.com/user-attachments/assets/3b2054e2-6129-4db9-96cf-c338bb6841f1" />
    
-6.  **User Creation & Service Restart:**
+4.  **User Creation & Service Restart:**
      Created local user ⁠ftpuser⁠ with home directory privileges and restarted the service:
        ```bash
 
@@ -62,7 +62,7 @@ This laboratory experiment demonstrates the configuration, deployment, and secur
 
 <img width="1017" height="817" alt="image" src="https://github.com/user-attachments/assets/f5357b93-2ec2-4604-8d94-67c6157b7bab" />
 
-3. **Verified ICMP reachability (Ping) between VLAN 10 and VLAN 50.**
+2. **Verified ICMP reachability (Ping) between VLAN 10 and VLAN 50.**
    <img width="960" height="740" alt="image" src="https://github.com/user-attachments/assets/d30e4b7b-696b-4df2-a44d-7aaf687b0813" />
 
 
